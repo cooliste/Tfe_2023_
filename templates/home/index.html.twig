@@ -1,0 +1,411 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello HomeController!
+{% endblock %}
+
+{% block body %}
+	<style>
+		.example-wrapper {
+			margin: 1em auto;
+			max-width: 800px;
+			width: 95%;
+			font: 18px / 1.5 sans-serif;
+		}
+		.example-wrapper code {
+			background: #F5F5F5;
+			padding: 2px 6px;
+		}
+	</style>
+
+	<header>
+		<!-- Navigation bar -->
+		<nav class="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8" aria-label="Global">
+			<div class="flex lg:flex-1">
+				<a href="#" class="-m-1.5 p-1.5">
+					<span class="sr-only">Your Company</span>
+					<img class="h-8 w-auto" src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600" alt="">
+				</a>
+			</div>
+			<div class="flex lg:hidden">
+				<button type="button" class="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-700">
+					<span class="sr-only">Open main menu</span>
+					<svg class="h-6 w-6" fill="none" viewbox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+						<path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"/>
+					</svg>
+				</button>
+			</div>
+			<div class="hidden lg:flex lg:gap-x-12">
+				<div class="relative">
+					<button type="button" class="flex items-center gap-x-1 text-sm font-semibold leading-6 text-gray-900" aria-expanded="false">
+						Product
+						<svg class="h-5 w-5 flex-none text-gray-400" viewbox="0 0 20 20" fill="currentColor" aria-hidden="true">
+							<path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z" clip-rule="evenodd"/>
+						</svg>
+					</button>
+
+
+				</div>
+
+				<a href="#" class="text-sm font-semibold leading-6 text-gray-900">Features</a>
+				<a href="#" class="text-sm font-semibold leading-6 text-gray-900">Marketplace</a>
+				<a href="#" class="text-sm font-semibold leading-6 text-gray-900">Company</a>
+			</div>
+			<div class="hidden lg:flex lg:flex-1 lg:justify-end">
+				<a href="#" class="text-sm font-semibold leading-6 text-gray-900">Log in
+					<span aria-hidden="true">&rarr;</span>
+				</a>
+			</div>
+		</nav>
+
+
+	</header>
+	<main class="flex flex-1 flex-col">
+		<div class="cms-content">
+			<div class="relative w-full">
+				<div class="Hero_bg__q6O1W"><img alt="" sizes="100vw" srcset="https://d39jeaq38kq5vc.cloudfront.net/_image?sanity=15w996j8%2Fcms%2F6b7db266a567668eaf1aa94b61a63991bb1c709c-1664x436.svg 640w, https://d39jeaq38kq5vc.cloudfront.net/_image?sanity=15w996j8%2Fcms%2F6b7db266a567668eaf1aa94b61a63991bb1c709c-1664x436.svg 750w, https://d39jeaq38kq5vc.cloudfront.net/_image?sanity=15w996j8%2Fcms%2F6b7db266a567668eaf1aa94b61a63991bb1c709c-1664x436.svg 828w, https://d39jeaq38kq5vc.cloudfront.net/_image?sanity=15w996j8%2Fcms%2F6b7db266a567668eaf1aa94b61a63991bb1c709c-1664x436.svg 1080w, https://d39jeaq38kq5vc.cloudfront.net/_image?sanity=15w996j8%2Fcms%2F6b7db266a567668eaf1aa94b61a63991bb1c709c-1664x436.svg 1200w, https://d39jeaq38kq5vc.cloudfront.net/_image?sanity=15w996j8%2Fcms%2F6b7db266a567668eaf1aa94b61a63991bb1c709c-1664x436.svg 1920w, https://d39jeaq38kq5vc.cloudfront.net/_image?sanity=15w996j8%2Fcms%2F6b7db266a567668eaf1aa94b61a63991bb1c709c-1664x436.svg 2048w, https://d39jeaq38kq5vc.cloudfront.net/_image?sanity=15w996j8%2Fcms%2F6b7db266a567668eaf1aa94b61a63991bb1c709c-1664x436.svg 3840w" src="https://d39jeaq38kq5vc.cloudfront.net/_image?sanity=15w996j8%2Fcms%2F6b7db266a567668eaf1aa94b61a63991bb1c709c-1664x436.svg" decoding="async" data-nimg="fill" class="object-cover" style="position: absolute; height: 100%; width: 100%; inset: 0px; color: transparent;"></div>
+				<div class="flex flex-col justify-center pb-12">
+					<div class="mx-auto w-full px-4 lg:max-w-screen-lg xl:max-w-[1190px] undefined">
+						<div class="flex flex-1 flex-col items-center justify-center py-[9%]">
+							<div class="Hero_heroTextStyle__dnED5">
+								<h1>Trouvez des prestataires qualifiés</h1>
+								<h2>Services de montage, travaux et déménagements partout en France</h2>
+							</div>
+							<a class="btn-blue mt-12 w-full md:w-auto btn btn-green btn-enabled" href="/preQualif.php">Publier une demande</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="mx-auto w-full px-4 lg:max-w-screen-lg xl:max-w-[1190px] py-12">
+				<section>
+					<a id="comment-a-marche" class="relative -top-20 block"></a>
+					<div class="flex flex-wrap justify-center gap-y-6">
+						<div class="w-full px-6 md:w-1/2 lg:w-1/4">
+							<div class="rounded-xl bg-white p-6 shadow-[0_10px_40px_0px_rgba(0,64,128,0.1)] h-full">
+								<div class="flex justify-center pb-4">
+									<div class="relative w-full h-10"><img alt="" sizes="(min-width: 1024px) 25vw, (min-width: 768px) 50vw, 75vw" srcset="https://d39jeaq38kq5vc.cloudfront.net/_image?sanity=15w996j8%2Fcms%2Fc8d3531bc2ed740920322f9f827f16399c70b777-114x108.png&amp;w=256&amp;q=75 256w, https://d39jeaq38kq5vc.cloudfront.net/_image?sanity=15w996j8%2Fcms%2Fc8d3531bc2ed740920322f9f827f16399c70b777-114x108.png&amp;w=384&amp;q=75 384w, https://d39jeaq38kq5vc.cloudfront.net/_image?sanity=15w996j8%2Fcms%2Fc8d3531bc2ed740920322f9f827f16399c70b777-114x108.png&amp;w=640&amp;q=75 640w, https://d39jeaq38kq5vc.cloudfront.net/_image?sanity=15w996j8%2Fcms%2Fc8d3531bc2ed740920322f9f827f16399c70b777-114x108.png&amp;w=750&amp;q=75 750w, https://d39jeaq38kq5vc.cloudfront.net/_image?sanity=15w996j8%2Fcms%2Fc8d3531bc2ed740920322f9f827f16399c70b777-114x108.png&amp;w=828&amp;q=75 828w, https://d39jeaq38kq5vc.cloudfront.net/_image?sanity=15w996j8%2Fcms%2Fc8d3531bc2ed740920322f9f827f16399c70b777-114x108.png&amp;w=1080&amp;q=75 1080w, https://d39jeaq38kq5vc.cloudfront.net/_image?sanity=15w996j8%2Fcms%2Fc8d3531bc2ed740920322f9f827f16399c70b777-114x108.png&amp;w=1200&amp;q=75 1200w, https://d39jeaq38kq5vc.cloudfront.net/_image?sanity=15w996j8%2Fcms%2Fc8d3531bc2ed740920322f9f827f16399c70b777-114x108.png&amp;w=1920&amp;q=75 1920w, https://d39jeaq38kq5vc.cloudfront.net/_image?sanity=15w996j8%2Fcms%2Fc8d3531bc2ed740920322f9f827f16399c70b777-114x108.png&amp;w=2048&amp;q=75 2048w, https://d39jeaq38kq5vc.cloudfront.net/_image?sanity=15w996j8%2Fcms%2Fc8d3531bc2ed740920322f9f827f16399c70b777-114x108.png&amp;w=3840&amp;q=75 3840w" src="https://d39jeaq38kq5vc.cloudfront.net/_image?sanity=15w996j8%2Fcms%2Fc8d3531bc2ed740920322f9f827f16399c70b777-114x108.png&amp;w=3840&amp;q=75" decoding="async" data-nimg="fill" class="object-contain" loading="lazy" style="position: absolute; height: 100%; width: 100%; inset: 0px; color: transparent;"></div>
+								</div>
+								<div class="text-center">
+									<div class="text-new-blue pb-2 text-xl">1. Publiez votre demande</div>
+									<div class="text-gray-600">Sélectionnez une catégorie et décrivez votre besoin</div>
+								</div>
+							</div>
+						</div>
+						<div class="w-full px-6 md:w-1/2 lg:w-1/4">
+							<div class="rounded-xl bg-white p-6 shadow-[0_10px_40px_0px_rgba(0,64,128,0.1)] h-full">
+								<div class="flex justify-center pb-4">
+									<div class="relative w-full h-10"><img alt="" sizes="(min-width: 1024px) 25vw, (min-width: 768px) 50vw, 75vw" srcset="https://d39jeaq38kq5vc.cloudfront.net/_image?sanity=15w996j8%2Fcms%2F146a750f629f8e3cded66f4ab931638531c19844-108x108.png&amp;w=256&amp;q=75 256w, https://d39jeaq38kq5vc.cloudfront.net/_image?sanity=15w996j8%2Fcms%2F146a750f629f8e3cded66f4ab931638531c19844-108x108.png&amp;w=384&amp;q=75 384w, https://d39jeaq38kq5vc.cloudfront.net/_image?sanity=15w996j8%2Fcms%2F146a750f629f8e3cded66f4ab931638531c19844-108x108.png&amp;w=640&amp;q=75 640w, https://d39jeaq38kq5vc.cloudfront.net/_image?sanity=15w996j8%2Fcms%2F146a750f629f8e3cded66f4ab931638531c19844-108x108.png&amp;w=750&amp;q=75 750w, https://d39jeaq38kq5vc.cloudfront.net/_image?sanity=15w996j8%2Fcms%2F146a750f629f8e3cded66f4ab931638531c19844-108x108.png&amp;w=828&amp;q=75 828w, https://d39jeaq38kq5vc.cloudfront.net/_image?sanity=15w996j8%2Fcms%2F146a750f629f8e3cded66f4ab931638531c19844-108x108.png&amp;w=1080&amp;q=75 1080w, https://d39jeaq38kq5vc.cloudfront.net/_image?sanity=15w996j8%2Fcms%2F146a750f629f8e3cded66f4ab931638531c19844-108x108.png&amp;w=1200&amp;q=75 1200w, https://d39jeaq38kq5vc.cloudfront.net/_image?sanity=15w996j8%2Fcms%2F146a750f629f8e3cded66f4ab931638531c19844-108x108.png&amp;w=1920&amp;q=75 1920w, https://d39jeaq38kq5vc.cloudfront.net/_image?sanity=15w996j8%2Fcms%2F146a750f629f8e3cded66f4ab931638531c19844-108x108.png&amp;w=2048&amp;q=75 2048w, https://d39jeaq38kq5vc.cloudfront.net/_image?sanity=15w996j8%2Fcms%2F146a750f629f8e3cded66f4ab931638531c19844-108x108.png&amp;w=3840&amp;q=75 3840w" src="https://d39jeaq38kq5vc.cloudfront.net/_image?sanity=15w996j8%2Fcms%2F146a750f629f8e3cded66f4ab931638531c19844-108x108.png&amp;w=3840&amp;q=75" decoding="async" data-nimg="fill" class="object-contain" loading="lazy" style="position: absolute; height: 100%; width: 100%; inset: 0px; color: transparent;"></div>
+								</div>
+								<div class="text-center">
+									<div class="text-new-blue pb-2 text-xl">2. Recevez des offres en 48h</div>
+									<div class="text-gray-600">Comparez les devis des prestataires</div>
+								</div>
+							</div>
+						</div>
+						<div class="w-full px-6 md:w-1/2 lg:w-1/4">
+							<div class="rounded-xl bg-white p-6 shadow-[0_10px_40px_0px_rgba(0,64,128,0.1)] h-full">
+								<div class="flex justify-center pb-4">
+									<div class="relative w-full h-10"><img alt="" sizes="(min-width: 1024px) 25vw, (min-width: 768px) 50vw, 75vw" srcset="https://d39jeaq38kq5vc.cloudfront.net/_image?sanity=15w996j8%2Fcms%2F344c4e938564e67fccd2f6e46b4d8064f4b9915b-83x106.png&amp;w=256&amp;q=75 256w, https://d39jeaq38kq5vc.cloudfront.net/_image?sanity=15w996j8%2Fcms%2F344c4e938564e67fccd2f6e46b4d8064f4b9915b-83x106.png&amp;w=384&amp;q=75 384w, https://d39jeaq38kq5vc.cloudfront.net/_image?sanity=15w996j8%2Fcms%2F344c4e938564e67fccd2f6e46b4d8064f4b9915b-83x106.png&amp;w=640&amp;q=75 640w, https://d39jeaq38kq5vc.cloudfront.net/_image?sanity=15w996j8%2Fcms%2F344c4e938564e67fccd2f6e46b4d8064f4b9915b-83x106.png&amp;w=750&amp;q=75 750w, https://d39jeaq38kq5vc.cloudfront.net/_image?sanity=15w996j8%2Fcms%2F344c4e938564e67fccd2f6e46b4d8064f4b9915b-83x106.png&amp;w=828&amp;q=75 828w, https://d39jeaq38kq5vc.cloudfront.net/_image?sanity=15w996j8%2Fcms%2F344c4e938564e67fccd2f6e46b4d8064f4b9915b-83x106.png&amp;w=1080&amp;q=75 1080w, https://d39jeaq38kq5vc.cloudfront.net/_image?sanity=15w996j8%2Fcms%2F344c4e938564e67fccd2f6e46b4d8064f4b9915b-83x106.png&amp;w=1200&amp;q=75 1200w, https://d39jeaq38kq5vc.cloudfront.net/_image?sanity=15w996j8%2Fcms%2F344c4e938564e67fccd2f6e46b4d8064f4b9915b-83x106.png&amp;w=1920&amp;q=75 1920w, https://d39jeaq38kq5vc.cloudfront.net/_image?sanity=15w996j8%2Fcms%2F344c4e938564e67fccd2f6e46b4d8064f4b9915b-83x106.png&amp;w=2048&amp;q=75 2048w, https://d39jeaq38kq5vc.cloudfront.net/_image?sanity=15w996j8%2Fcms%2F344c4e938564e67fccd2f6e46b4d8064f4b9915b-83x106.png&amp;w=3840&amp;q=75 3840w" src="https://d39jeaq38kq5vc.cloudfront.net/_image?sanity=15w996j8%2Fcms%2F344c4e938564e67fccd2f6e46b4d8064f4b9915b-83x106.png&amp;w=3840&amp;q=75" decoding="async" data-nimg="fill" class="object-contain" loading="lazy" style="position: absolute; height: 100%; width: 100%; inset: 0px; color: transparent;"></div>
+								</div>
+								<div class="text-center">
+									<div class="text-new-blue pb-2 text-xl">3. Choisissez votre prestataire</div>
+									<div class="text-gray-600">Particulier ou professionnel selon votre budget</div>
+								</div>
+							</div>
+						</div>
+						<div class="w-full px-6 md:w-1/2 lg:w-1/4">
+							<div class="rounded-xl bg-white p-6 shadow-[0_10px_40px_0px_rgba(0,64,128,0.1)] h-full">
+								<div class="flex justify-center pb-4">
+									<div class="relative w-full h-10"><img alt="" sizes="(min-width: 1024px) 25vw, (min-width: 768px) 50vw, 75vw" srcset="https://d39jeaq38kq5vc.cloudfront.net/_image?sanity=15w996j8%2Fcms%2Fa6462b5600e78c82e60cf6b8de18f1860f5ac081-119x108.png&amp;w=256&amp;q=75 256w, https://d39jeaq38kq5vc.cloudfront.net/_image?sanity=15w996j8%2Fcms%2Fa6462b5600e78c82e60cf6b8de18f1860f5ac081-119x108.png&amp;w=384&amp;q=75 384w, https://d39jeaq38kq5vc.cloudfront.net/_image?sanity=15w996j8%2Fcms%2Fa6462b5600e78c82e60cf6b8de18f1860f5ac081-119x108.png&amp;w=640&amp;q=75 640w, https://d39jeaq38kq5vc.cloudfront.net/_image?sanity=15w996j8%2Fcms%2Fa6462b5600e78c82e60cf6b8de18f1860f5ac081-119x108.png&amp;w=750&amp;q=75 750w, https://d39jeaq38kq5vc.cloudfront.net/_image?sanity=15w996j8%2Fcms%2Fa6462b5600e78c82e60cf6b8de18f1860f5ac081-119x108.png&amp;w=828&amp;q=75 828w, https://d39jeaq38kq5vc.cloudfront.net/_image?sanity=15w996j8%2Fcms%2Fa6462b5600e78c82e60cf6b8de18f1860f5ac081-119x108.png&amp;w=1080&amp;q=75 1080w, https://d39jeaq38kq5vc.cloudfront.net/_image?sanity=15w996j8%2Fcms%2Fa6462b5600e78c82e60cf6b8de18f1860f5ac081-119x108.png&amp;w=1200&amp;q=75 1200w, https://d39jeaq38kq5vc.cloudfront.net/_image?sanity=15w996j8%2Fcms%2Fa6462b5600e78c82e60cf6b8de18f1860f5ac081-119x108.png&amp;w=1920&amp;q=75 1920w, https://d39jeaq38kq5vc.cloudfront.net/_image?sanity=15w996j8%2Fcms%2Fa6462b5600e78c82e60cf6b8de18f1860f5ac081-119x108.png&amp;w=2048&amp;q=75 2048w, https://d39jeaq38kq5vc.cloudfront.net/_image?sanity=15w996j8%2Fcms%2Fa6462b5600e78c82e60cf6b8de18f1860f5ac081-119x108.png&amp;w=3840&amp;q=75 3840w" src="https://d39jeaq38kq5vc.cloudfront.net/_image?sanity=15w996j8%2Fcms%2Fa6462b5600e78c82e60cf6b8de18f1860f5ac081-119x108.png&amp;w=3840&amp;q=75" decoding="async" data-nimg="fill" class="object-contain" loading="lazy" style="position: absolute; height: 100%; width: 100%; inset: 0px; color: transparent;"></div>
+								</div>
+								<div class="text-center">
+									<div class="text-new-blue pb-2 text-xl">4. Réalisez tous vos travaux</div>
+									<div class="text-gray-600">Fixez un rendez-vous et notez la prestation</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+			</div>
+			<div
+				class="mx-auto w-full px-4 lg:max-w-screen-lg xl:max-w-[1190px] py-12">
+				{# TODO: Je pense à mettre une vidéo courte [Gauche] #}
+				<section>
+					<a id="ervices" class="relative -top-20 block"></a>
+					<div class="grid grid-cols-1 items-center gap-12 md:grid-cols-2">
+						<div class="relative pb-[56.25%]">
+							<div class="absolute inset-0" allowfullscreen="" style="width: 100%; height: 100%;">
+								<div class="react-player__preview" tabindex="0" style="width: 100%; height: 100%; background-size: cover; background-position: center center; cursor: pointer; display: flex; align-items: center; justify-content: center; background-image: url(&quot;https://i.ytimg.com/vi/pMD0JGkCepQ/hqdefault.jpg&quot;);">
+									<div class="react-player__shadow" style="background: radial-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0) 60%); border-radius: 64px; width: 64px; height: 64px; display: flex; align-items: center; justify-content: center;">
+										<div class="react-player__play-icon" style="border-style: solid; border-width: 16px 0px 16px 26px; border-color: transparent transparent transparent white; margin-left: 7px;"></div>
+									</div>
+								</div>
+							</div>
+						</div>
+						{#  Section à droite après les 4fonctionnalités de la plateforme [Droite]#}
+						<section class="prose prose-a:text-secondary max-w-none">
+							<p>Notre entreprise vous permet de déléguer des travaux à un prestataire (professionnel ou particulier) en moins de 48h.</p>
+							<p>
+								<strong>Sélectionnez votre service et réalisez votre projet</strong>
+							</p>
+							<ul class="list-none flex-row p-0">
+								<li class="not-prose flex gap-4 p-0">
+									<span>
+										<svg stroke="currentColor" fill="currentColor" stroke-width="0" viewbox="0 0 16 16" class="text-new-blue text-2xl" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+											<path d="M3 14.5A1.5 1.5 0 0 1 1.5 13V3A1.5 1.5 0 0 1 3 1.5h8a.5.5 0 0 1 0 1H3a.5.5 0 0 0-.5.5v10a.5.5 0 0 0 .5.5h10a.5.5 0 0 0 .5-.5V8a.5.5 0 0 1 1 0v5a1.5 1.5 0 0 1-1.5 1.5H3z"></path>
+											<path d="m8.354 10.354 7-7a.5.5 0 0 0-.708-.708L8 9.293 5.354 6.646a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0z"></path>
+										</svg>
+									</span>
+									<span>
+										<a href="/#tuiles">Peinture &amp; revêtements de sol</a>
+									</span>
+								</li>
+								<li class="not-prose flex gap-4 p-0">
+									<span>
+										<svg stroke="currentColor" fill="currentColor" stroke-width="0" viewbox="0 0 16 16" class="text-new-blue text-2xl" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+											<path d="M3 14.5A1.5 1.5 0 0 1 1.5 13V3A1.5 1.5 0 0 1 3 1.5h8a.5.5 0 0 1 0 1H3a.5.5 0 0 0-.5.5v10a.5.5 0 0 0 .5.5h10a.5.5 0 0 0 .5-.5V8a.5.5 0 0 1 1 0v5a1.5 1.5 0 0 1-1.5 1.5H3z"></path>
+											<path d="m8.354 10.354 7-7a.5.5 0 0 0-.708-.708L8 9.293 5.354 6.646a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0z"></path>
+										</svg>
+									</span>
+									<span>
+										<a href="/#tuiles">Pose de cuisine</a>
+									</span>
+								</li>
+								<li class="not-prose flex gap-4 p-0">
+									<span>
+										<svg stroke="currentColor" fill="currentColor" stroke-width="0" viewbox="0 0 16 16" class="text-new-blue text-2xl" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+											<path d="M3 14.5A1.5 1.5 0 0 1 1.5 13V3A1.5 1.5 0 0 1 3 1.5h8a.5.5 0 0 1 0 1H3a.5.5 0 0 0-.5.5v10a.5.5 0 0 0 .5.5h10a.5.5 0 0 0 .5-.5V8a.5.5 0 0 1 1 0v5a1.5 1.5 0 0 1-1.5 1.5H3z"></path>
+											<path d="m8.354 10.354 7-7a.5.5 0 0 0-.708-.708L8 9.293 5.354 6.646a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0z"></path>
+										</svg>
+									</span>
+									<span>
+										<a href="/#tuiles">Montage de meuble</a>
+									</span>
+								</li>
+								<li class="not-prose flex gap-4 p-0">
+									<span>
+										<svg stroke="currentColor" fill="currentColor" stroke-width="0" viewbox="0 0 16 16" class="text-new-blue text-2xl" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+											<path d="M3 14.5A1.5 1.5 0 0 1 1.5 13V3A1.5 1.5 0 0 1 3 1.5h8a.5.5 0 0 1 0 1H3a.5.5 0 0 0-.5.5v10a.5.5 0 0 0 .5.5h10a.5.5 0 0 0 .5-.5V8a.5.5 0 0 1 1 0v5a1.5 1.5 0 0 1-1.5 1.5H3z"></path>
+											<path d="m8.354 10.354 7-7a.5.5 0 0 0-.708-.708L8 9.293 5.354 6.646a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0z"></path>
+										</svg>
+									</span>
+									<span>
+										<a href="/#tuiles">Rénovation de salle de bain</a>
+									</span>
+								</li>
+								<li class="not-prose flex gap-4 p-0">
+									<span>
+										<svg stroke="currentColor" fill="currentColor" stroke-width="0" viewbox="0 0 16 16" class="text-new-blue text-2xl" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+											<path d="M3 14.5A1.5 1.5 0 0 1 1.5 13V3A1.5 1.5 0 0 1 3 1.5h8a.5.5 0 0 1 0 1H3a.5.5 0 0 0-.5.5v10a.5.5 0 0 0 .5.5h10a.5.5 0 0 0 .5-.5V8a.5.5 0 0 1 1 0v5a1.5 1.5 0 0 1-1.5 1.5H3z"></path>
+											<path d="m8.354 10.354 7-7a.5.5 0 0 0-.708-.708L8 9.293 5.354 6.646a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0z"></path>
+										</svg>
+									</span>
+									<span>
+										<a href="/#tuiles">Plomberie/électricité</a>
+									</span>
+								</li>
+								<li class="not-prose flex gap-4 p-0">
+									<span>
+										<svg stroke="currentColor" fill="currentColor" stroke-width="0" viewbox="0 0 16 16" class="text-new-blue text-2xl" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+											<path d="M3 14.5A1.5 1.5 0 0 1 1.5 13V3A1.5 1.5 0 0 1 3 1.5h8a.5.5 0 0 1 0 1H3a.5.5 0 0 0-.5.5v10a.5.5 0 0 0 .5.5h10a.5.5 0 0 0 .5-.5V8a.5.5 0 0 1 1 0v5a1.5 1.5 0 0 1-1.5 1.5H3z"></path>
+											<path d="m8.354 10.354 7-7a.5.5 0 0 0-.708-.708L8 9.293 5.354 6.646a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0z"></path>
+										</svg>
+									</span>
+									<span>
+										<a href="/#tuiles">Déménagement
+										</a>
+									</span>
+								</li>
+								<li class="not-prose flex gap-4 p-0">
+									<span>
+										<svg stroke="currentColor" fill="currentColor" stroke-width="0" viewbox="0 0 16 16" class="text-new-blue text-2xl" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+											<path d="M3 14.5A1.5 1.5 0 0 1 1.5 13V3A1.5 1.5 0 0 1 3 1.5h8a.5.5 0 0 1 0 1H3a.5.5 0 0 0-.5.5v10a.5.5 0 0 0 .5.5h10a.5.5 0 0 0 .5-.5V8a.5.5 0 0 1 1 0v5a1.5 1.5 0 0 1-1.5 1.5H3z"></path>
+											<path d="m8.354 10.354 7-7a.5.5 0 0 0-.708-.708L8 9.293 5.354 6.646a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0z"></path>
+										</svg>
+									</span>
+									<span>
+										<a href="/#tuiles">et d'autres...</a>
+									</span>
+								</li>
+							</ul>
+						</section>
+					</div>
+				</section>
+			</div>
+			{#    Bloc des logos de partenaire supprimé #}
+			<div class="mx-auto w-full px-4 lg:max-w-screen-lg xl:max-w-[1190px] py-12">
+				<section>
+					<a id="garanties" class="relative -top-20 block"></a>
+					<div class="flex flex-wrap justify-center gap-y-6">
+						<div class="w-full px-6 md:w-1/2 lg:w-1/4">
+							<div class="h-full">
+								<div class="flex justify-center pb-4">
+									<div class="relative w-full h-10"><img alt="" sizes="(min-width: 1024px) 25vw, (min-width: 768px) 50vw, 75vw" srcset="https://d39jeaq38kq5vc.cloudfront.net/_image?sanity=15w996j8%2Fcms%2Fda3bd175158e7f4841487ef1bfc28f46468f6c90-1200x1200.png&amp;w=256&amp;q=75 256w, https://d39jeaq38kq5vc.cloudfront.net/_image?sanity=15w996j8%2Fcms%2Fda3bd175158e7f4841487ef1bfc28f46468f6c90-1200x1200.png&amp;w=384&amp;q=75 384w, https://d39jeaq38kq5vc.cloudfront.net/_image?sanity=15w996j8%2Fcms%2Fda3bd175158e7f4841487ef1bfc28f46468f6c90-1200x1200.png&amp;w=640&amp;q=75 640w, https://d39jeaq38kq5vc.cloudfront.net/_image?sanity=15w996j8%2Fcms%2Fda3bd175158e7f4841487ef1bfc28f46468f6c90-1200x1200.png&amp;w=750&amp;q=75 750w, https://d39jeaq38kq5vc.cloudfront.net/_image?sanity=15w996j8%2Fcms%2Fda3bd175158e7f4841487ef1bfc28f46468f6c90-1200x1200.png&amp;w=828&amp;q=75 828w, https://d39jeaq38kq5vc.cloudfront.net/_image?sanity=15w996j8%2Fcms%2Fda3bd175158e7f4841487ef1bfc28f46468f6c90-1200x1200.png&amp;w=1080&amp;q=75 1080w, https://d39jeaq38kq5vc.cloudfront.net/_image?sanity=15w996j8%2Fcms%2Fda3bd175158e7f4841487ef1bfc28f46468f6c90-1200x1200.png&amp;w=1200&amp;q=75 1200w, https://d39jeaq38kq5vc.cloudfront.net/_image?sanity=15w996j8%2Fcms%2Fda3bd175158e7f4841487ef1bfc28f46468f6c90-1200x1200.png&amp;w=1920&amp;q=75 1920w, https://d39jeaq38kq5vc.cloudfront.net/_image?sanity=15w996j8%2Fcms%2Fda3bd175158e7f4841487ef1bfc28f46468f6c90-1200x1200.png&amp;w=2048&amp;q=75 2048w, https://d39jeaq38kq5vc.cloudfront.net/_image?sanity=15w996j8%2Fcms%2Fda3bd175158e7f4841487ef1bfc28f46468f6c90-1200x1200.png&amp;w=3840&amp;q=75 3840w" src="https://d39jeaq38kq5vc.cloudfront.net/_image?sanity=15w996j8%2Fcms%2Fda3bd175158e7f4841487ef1bfc28f46468f6c90-1200x1200.png&amp;w=3840&amp;q=75" decoding="async" data-nimg="fill" class="object-contain" loading="lazy" style="position: absolute; height: 100%; width: 100%; inset: 0px; color: transparent;"></div>
+								</div>
+								<div class="text-center">
+									<div class="text-new-blue pb-2 text-xl">Prestations assurées par AXA</div>
+									<div class="text-gray-600">Assurance multirisque incluse
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="w-full px-6 md:w-1/2 lg:w-1/4">
+							<div class="h-full">
+								<div class="flex justify-center pb-4">
+									<div class="relative w-full h-10"><img alt="" sizes="(min-width: 1024px) 25vw, (min-width: 768px) 50vw, 75vw" srcset="https://d39jeaq38kq5vc.cloudfront.net/_image?sanity=15w996j8%2Fcms%2F9cd8fb5111100b66c3b488745756d2def2c05728-86x105.png&amp;w=256&amp;q=75 256w, https://d39jeaq38kq5vc.cloudfront.net/_image?sanity=15w996j8%2Fcms%2F9cd8fb5111100b66c3b488745756d2def2c05728-86x105.png&amp;w=384&amp;q=75 384w, https://d39jeaq38kq5vc.cloudfront.net/_image?sanity=15w996j8%2Fcms%2F9cd8fb5111100b66c3b488745756d2def2c05728-86x105.png&amp;w=640&amp;q=75 640w, https://d39jeaq38kq5vc.cloudfront.net/_image?sanity=15w996j8%2Fcms%2F9cd8fb5111100b66c3b488745756d2def2c05728-86x105.png&amp;w=750&amp;q=75 750w, https://d39jeaq38kq5vc.cloudfront.net/_image?sanity=15w996j8%2Fcms%2F9cd8fb5111100b66c3b488745756d2def2c05728-86x105.png&amp;w=828&amp;q=75 828w, https://d39jeaq38kq5vc.cloudfront.net/_image?sanity=15w996j8%2Fcms%2F9cd8fb5111100b66c3b488745756d2def2c05728-86x105.png&amp;w=1080&amp;q=75 1080w, https://d39jeaq38kq5vc.cloudfront.net/_image?sanity=15w996j8%2Fcms%2F9cd8fb5111100b66c3b488745756d2def2c05728-86x105.png&amp;w=1200&amp;q=75 1200w, https://d39jeaq38kq5vc.cloudfront.net/_image?sanity=15w996j8%2Fcms%2F9cd8fb5111100b66c3b488745756d2def2c05728-86x105.png&amp;w=1920&amp;q=75 1920w, https://d39jeaq38kq5vc.cloudfront.net/_image?sanity=15w996j8%2Fcms%2F9cd8fb5111100b66c3b488745756d2def2c05728-86x105.png&amp;w=2048&amp;q=75 2048w, https://d39jeaq38kq5vc.cloudfront.net/_image?sanity=15w996j8%2Fcms%2F9cd8fb5111100b66c3b488745756d2def2c05728-86x105.png&amp;w=3840&amp;q=75 3840w" src="https://d39jeaq38kq5vc.cloudfront.net/_image?sanity=15w996j8%2Fcms%2F9cd8fb5111100b66c3b488745756d2def2c05728-86x105.png&amp;w=3840&amp;q=75" decoding="async" data-nimg="fill" class="object-contain" loading="lazy" style="position: absolute; height: 100%; width: 100%; inset: 0px; color: transparent;"></div>
+								</div>
+								<div class="text-center">
+									<div class="text-new-blue pb-2 text-xl">Garantie "Satisfait ou Refait"</div>
+									<div class="text-gray-600">Prise en charge en cas de malfaçon</div>
+								</div>
+							</div>
+						</div>
+						<div class="w-full px-6 md:w-1/2 lg:w-1/4">
+							<div class="h-full">
+								<div class="flex justify-center pb-4">
+									<div class="relative w-full h-10"><img alt="" sizes="(min-width: 1024px) 25vw, (min-width: 768px) 50vw, 75vw" srcset="https://d39jeaq38kq5vc.cloudfront.net/_image?sanity=15w996j8%2Fcms%2Fb91d39323a71fbd73819970c1dba8dd486fcc3bb-76x105.svg 256w, https://d39jeaq38kq5vc.cloudfront.net/_image?sanity=15w996j8%2Fcms%2Fb91d39323a71fbd73819970c1dba8dd486fcc3bb-76x105.svg 384w, https://d39jeaq38kq5vc.cloudfront.net/_image?sanity=15w996j8%2Fcms%2Fb91d39323a71fbd73819970c1dba8dd486fcc3bb-76x105.svg 640w, https://d39jeaq38kq5vc.cloudfront.net/_image?sanity=15w996j8%2Fcms%2Fb91d39323a71fbd73819970c1dba8dd486fcc3bb-76x105.svg 750w, https://d39jeaq38kq5vc.cloudfront.net/_image?sanity=15w996j8%2Fcms%2Fb91d39323a71fbd73819970c1dba8dd486fcc3bb-76x105.svg 828w, https://d39jeaq38kq5vc.cloudfront.net/_image?sanity=15w996j8%2Fcms%2Fb91d39323a71fbd73819970c1dba8dd486fcc3bb-76x105.svg 1080w, https://d39jeaq38kq5vc.cloudfront.net/_image?sanity=15w996j8%2Fcms%2Fb91d39323a71fbd73819970c1dba8dd486fcc3bb-76x105.svg 1200w, https://d39jeaq38kq5vc.cloudfront.net/_image?sanity=15w996j8%2Fcms%2Fb91d39323a71fbd73819970c1dba8dd486fcc3bb-76x105.svg 1920w, https://d39jeaq38kq5vc.cloudfront.net/_image?sanity=15w996j8%2Fcms%2Fb91d39323a71fbd73819970c1dba8dd486fcc3bb-76x105.svg 2048w, https://d39jeaq38kq5vc.cloudfront.net/_image?sanity=15w996j8%2Fcms%2Fb91d39323a71fbd73819970c1dba8dd486fcc3bb-76x105.svg 3840w" src="https://d39jeaq38kq5vc.cloudfront.net/_image?sanity=15w996j8%2Fcms%2Fb91d39323a71fbd73819970c1dba8dd486fcc3bb-76x105.svg" decoding="async" data-nimg="fill" class="object-contain" loading="lazy" style="position: absolute; height: 100%; width: 100%; inset: 0px; color: transparent;"></div>
+								</div>
+								<div class="text-center">
+									<div class="text-new-blue pb-2 text-xl">Prix exceptionnel désservit par les clients</div>
+									<div class="text-gray-600">Source Capital</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+				</section>
+			</div>
+			{#  Conainer1 des prestataires de service #}
+			<div class="mx-auto w-full px-4 lg:max-w-screen-lg xl:max-w-[1190px] py-12">
+				<section>
+					<a id="tuiles" class="relative -top-20 block"></a>
+					<div class="prose max-w-none text-center">
+						<h2 class="">Découvrir tous nos services</h2>
+					</div>
+					<div class="flex w-full flex-col items-center">
+						<div class="grid w-full grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3">
+							<a class="TilesBlock_tileStyle__HFft_ lg:col-span-2 block w-full overflow-hidden text-center" href="/bricolage-facile~2.pre">
+								<div class="relative flex h-60 items-center"><img alt="" sizes="(min-width: 1024px) 66.6vw, (min-width: 640px) 50vw, 100vw" srcset="https://d39jeaq38kq5vc.cloudfront.net/_image?sanity=15w996j8%2Fcms%2Fe1767c022906e098b58efa94b4a6e1124c7b0988-1920x1080.jpg&amp;w=384&amp;q=75 384w, https://d39jeaq38kq5vc.cloudfront.net/_image?sanity=15w996j8%2Fcms%2Fe1767c022906e098b58efa94b4a6e1124c7b0988-1920x1080.jpg&amp;w=640&amp;q=75 640w, https://d39jeaq38kq5vc.cloudfront.net/_image?sanity=15w996j8%2Fcms%2Fe1767c022906e098b58efa94b4a6e1124c7b0988-1920x1080.jpg&amp;w=750&amp;q=75 750w, https://d39jeaq38kq5vc.cloudfront.net/_image?sanity=15w996j8%2Fcms%2Fe1767c022906e098b58efa94b4a6e1124c7b0988-1920x1080.jpg&amp;w=828&amp;q=75 828w, https://d39jeaq38kq5vc.cloudfront.net/_image?sanity=15w996j8%2Fcms%2Fe1767c022906e098b58efa94b4a6e1124c7b0988-1920x1080.jpg&amp;w=1080&amp;q=75 1080w, https://d39jeaq38kq5vc.cloudfront.net/_image?sanity=15w996j8%2Fcms%2Fe1767c022906e098b58efa94b4a6e1124c7b0988-1920x1080.jpg&amp;w=1200&amp;q=75 1200w, https://d39jeaq38kq5vc.cloudfront.net/_image?sanity=15w996j8%2Fcms%2Fe1767c022906e098b58efa94b4a6e1124c7b0988-1920x1080.jpg&amp;w=1920&amp;q=75 1920w, https://d39jeaq38kq5vc.cloudfront.net/_image?sanity=15w996j8%2Fcms%2Fe1767c022906e098b58efa94b4a6e1124c7b0988-1920x1080.jpg&amp;w=2048&amp;q=75 2048w, https://d39jeaq38kq5vc.cloudfront.net/_image?sanity=15w996j8%2Fcms%2Fe1767c022906e098b58efa94b4a6e1124c7b0988-1920x1080.jpg&amp;w=3840&amp;q=75 3840w" src="https://d39jeaq38kq5vc.cloudfront.net/_image?sanity=15w996j8%2Fcms%2Fe1767c022906e098b58efa94b4a6e1124c7b0988-1920x1080.jpg&amp;w=3840&amp;q=75" decoding="async" data-nimg="fill" class="object-cover" loading="lazy" style="position: absolute; height: 100%; width: 100%; inset: 0px; color: transparent;"><span class="z-10 flex-1 text-2xl font-bold text-white sm:text-3xl" style="text-shadow: rgb(0, 0, 0) 2px 2px 2px;">SERVICES DE BRICOLAGE</span>
+								</div>
+								<div class="text-xl text-green-500">à partir de 20€</div>
+							</a>
+							<a class="TilesBlock_tileStyle__HFft_ block w-full overflow-hidden text-center" href="/poster.php?categorie=2&amp;sousCategorie=2">
+								<div class="relative flex h-60 items-center"><img alt="" sizes="(min-width: 1024px) 33.3vw, (min-width: 640px) 50vw, 100vw" srcset="https://d39jeaq38kq5vc.cloudfront.net/_image?sanity=15w996j8%2Fcms%2F4f6dc104536410ae6b470afa1f012df21a9f335f-4447x2429.jpg&amp;w=384&amp;q=75 384w, https://d39jeaq38kq5vc.cloudfront.net/_image?sanity=15w996j8%2Fcms%2F4f6dc104536410ae6b470afa1f012df21a9f335f-4447x2429.jpg&amp;w=640&amp;q=75 640w, https://d39jeaq38kq5vc.cloudfront.net/_image?sanity=15w996j8%2Fcms%2F4f6dc104536410ae6b470afa1f012df21a9f335f-4447x2429.jpg&amp;w=750&amp;q=75 750w, https://d39jeaq38kq5vc.cloudfront.net/_image?sanity=15w996j8%2Fcms%2F4f6dc104536410ae6b470afa1f012df21a9f335f-4447x2429.jpg&amp;w=828&amp;q=75 828w, https://d39jeaq38kq5vc.cloudfront.net/_image?sanity=15w996j8%2Fcms%2F4f6dc104536410ae6b470afa1f012df21a9f335f-4447x2429.jpg&amp;w=1080&amp;q=75 1080w, https://d39jeaq38kq5vc.cloudfront.net/_image?sanity=15w996j8%2Fcms%2F4f6dc104536410ae6b470afa1f012df21a9f335f-4447x2429.jpg&amp;w=1200&amp;q=75 1200w, https://d39jeaq38kq5vc.cloudfront.net/_image?sanity=15w996j8%2Fcms%2F4f6dc104536410ae6b470afa1f012df21a9f335f-4447x2429.jpg&amp;w=1920&amp;q=75 1920w, https://d39jeaq38kq5vc.cloudfront.net/_image?sanity=15w996j8%2Fcms%2F4f6dc104536410ae6b470afa1f012df21a9f335f-4447x2429.jpg&amp;w=2048&amp;q=75 2048w, https://d39jeaq38kq5vc.cloudfront.net/_image?sanity=15w996j8%2Fcms%2F4f6dc104536410ae6b470afa1f012df21a9f335f-4447x2429.jpg&amp;w=3840&amp;q=75 3840w" src="https://d39jeaq38kq5vc.cloudfront.net/_image?sanity=15w996j8%2Fcms%2F4f6dc104536410ae6b470afa1f012df21a9f335f-4447x2429.jpg&amp;w=3840&amp;q=75" decoding="async" data-nimg="fill" class="object-cover" loading="lazy" style="position: absolute; height: 100%; width: 100%; inset: 0px; color: transparent;"><span class="z-10 flex-1 text-2xl font-bold text-white sm:text-3xl" style="text-shadow: rgb(0, 0, 0) 2px 2px 2px;">POSE DE CUISINE</span>
+								</div>
+								<div class="text-xl text-green-500">à partir de 250€</div>
+							</a>
+							<a class="TilesBlock_tileStyle__HFft_ block w-full overflow-hidden text-center" href="/poster.php?categorie=2&amp;sousCategorie=6">
+								<div class="relative flex h-60 items-center"><img alt="" sizes="(min-width: 1024px) 33.3vw, (min-width: 640px) 50vw, 100vw" srcset="https://d39jeaq38kq5vc.cloudfront.net/_image?sanity=15w996j8%2Fcms%2Fc766f324759f411863038700630138cedf2ac729-768x435.jpg&amp;w=384&amp;q=75 384w, https://d39jeaq38kq5vc.cloudfront.net/_image?sanity=15w996j8%2Fcms%2Fc766f324759f411863038700630138cedf2ac729-768x435.jpg&amp;w=640&amp;q=75 640w, https://d39jeaq38kq5vc.cloudfront.net/_image?sanity=15w996j8%2Fcms%2Fc766f324759f411863038700630138cedf2ac729-768x435.jpg&amp;w=750&amp;q=75 750w, https://d39jeaq38kq5vc.cloudfront.net/_image?sanity=15w996j8%2Fcms%2Fc766f324759f411863038700630138cedf2ac729-768x435.jpg&amp;w=828&amp;q=75 828w, https://d39jeaq38kq5vc.cloudfront.net/_image?sanity=15w996j8%2Fcms%2Fc766f324759f411863038700630138cedf2ac729-768x435.jpg&amp;w=1080&amp;q=75 1080w, https://d39jeaq38kq5vc.cloudfront.net/_image?sanity=15w996j8%2Fcms%2Fc766f324759f411863038700630138cedf2ac729-768x435.jpg&amp;w=1200&amp;q=75 1200w, https://d39jeaq38kq5vc.cloudfront.net/_image?sanity=15w996j8%2Fcms%2Fc766f324759f411863038700630138cedf2ac729-768x435.jpg&amp;w=1920&amp;q=75 1920w, https://d39jeaq38kq5vc.cloudfront.net/_image?sanity=15w996j8%2Fcms%2Fc766f324759f411863038700630138cedf2ac729-768x435.jpg&amp;w=2048&amp;q=75 2048w, https://d39jeaq38kq5vc.cloudfront.net/_image?sanity=15w996j8%2Fcms%2Fc766f324759f411863038700630138cedf2ac729-768x435.jpg&amp;w=3840&amp;q=75 3840w" src="https://d39jeaq38kq5vc.cloudfront.net/_image?sanity=15w996j8%2Fcms%2Fc766f324759f411863038700630138cedf2ac729-768x435.jpg&amp;w=3840&amp;q=75" decoding="async" data-nimg="fill" class="object-cover" loading="lazy" style="position: absolute; height: 100%; width: 100%; inset: 0px; color: transparent;"><span class="z-10 flex-1 text-2xl font-bold text-white sm:text-3xl" style="text-shadow: rgb(0, 0, 0) 2px 2px 2px;">REVÊTEMENTS DE SOL</span>
+								</div>
+								<div class="text-xl text-green-500">à partir de 10€/m²</div>
+							</a>
+							<a class="TilesBlock_tileStyle__HFft_ block w-full overflow-hidden text-center" href="/poster.php?categorie=2&amp;sousCategorie=7">
+								<div class="relative flex h-60 items-center"><img alt="" sizes="(min-width: 1024px) 33.3vw, (min-width: 640px) 50vw, 100vw" srcset="https://d39jeaq38kq5vc.cloudfront.net/_image?sanity=15w996j8%2Fcms%2Faeb300d399e8719ec48e9c38f948f4d8d97b8a35-4760x3961.jpg&amp;w=384&amp;q=75 384w, https://d39jeaq38kq5vc.cloudfront.net/_image?sanity=15w996j8%2Fcms%2Faeb300d399e8719ec48e9c38f948f4d8d97b8a35-4760x3961.jpg&amp;w=640&amp;q=75 640w, https://d39jeaq38kq5vc.cloudfront.net/_image?sanity=15w996j8%2Fcms%2Faeb300d399e8719ec48e9c38f948f4d8d97b8a35-4760x3961.jpg&amp;w=750&amp;q=75 750w, https://d39jeaq38kq5vc.cloudfront.net/_image?sanity=15w996j8%2Fcms%2Faeb300d399e8719ec48e9c38f948f4d8d97b8a35-4760x3961.jpg&amp;w=828&amp;q=75 828w, https://d39jeaq38kq5vc.cloudfront.net/_image?sanity=15w996j8%2Fcms%2Faeb300d399e8719ec48e9c38f948f4d8d97b8a35-4760x3961.jpg&amp;w=1080&amp;q=75 1080w, https://d39jeaq38kq5vc.cloudfront.net/_image?sanity=15w996j8%2Fcms%2Faeb300d399e8719ec48e9c38f948f4d8d97b8a35-4760x3961.jpg&amp;w=1200&amp;q=75 1200w, https://d39jeaq38kq5vc.cloudfront.net/_image?sanity=15w996j8%2Fcms%2Faeb300d399e8719ec48e9c38f948f4d8d97b8a35-4760x3961.jpg&amp;w=1920&amp;q=75 1920w, https://d39jeaq38kq5vc.cloudfront.net/_image?sanity=15w996j8%2Fcms%2Faeb300d399e8719ec48e9c38f948f4d8d97b8a35-4760x3961.jpg&amp;w=2048&amp;q=75 2048w, https://d39jeaq38kq5vc.cloudfront.net/_image?sanity=15w996j8%2Fcms%2Faeb300d399e8719ec48e9c38f948f4d8d97b8a35-4760x3961.jpg&amp;w=3840&amp;q=75 3840w" src="https://d39jeaq38kq5vc.cloudfront.net/_image?sanity=15w996j8%2Fcms%2Faeb300d399e8719ec48e9c38f948f4d8d97b8a35-4760x3961.jpg&amp;w=3840&amp;q=75" decoding="async" data-nimg="fill" class="object-cover" loading="lazy" style="position: absolute; height: 100%; width: 100%; inset: 0px; color: transparent;"><span class="z-10 flex-1 text-2xl font-bold text-white sm:text-3xl" style="text-shadow: rgb(0, 0, 0) 2px 2px 2px;">PEINTURE
+									</span>
+								</div>
+								<div class="text-xl text-green-500">à partir de 5€/m²</div>
+							</a>
+							<a class="TilesBlock_tileStyle__HFft_ block w-full overflow-hidden text-center" href="/poster.php?categorie=2&amp;sousCategorie=3">
+								<div class="relative flex h-60 items-center"><img alt="" sizes="(min-width: 1024px) 33.3vw, (min-width: 640px) 50vw, 100vw" srcset="https://d39jeaq38kq5vc.cloudfront.net/_image?sanity=15w996j8%2Fcms%2Fdecc054b6a7e2b60e6af495d14b5a2f387fb0990-690x564.jpg&amp;w=384&amp;q=75 384w, https://d39jeaq38kq5vc.cloudfront.net/_image?sanity=15w996j8%2Fcms%2Fdecc054b6a7e2b60e6af495d14b5a2f387fb0990-690x564.jpg&amp;w=640&amp;q=75 640w, https://d39jeaq38kq5vc.cloudfront.net/_image?sanity=15w996j8%2Fcms%2Fdecc054b6a7e2b60e6af495d14b5a2f387fb0990-690x564.jpg&amp;w=750&amp;q=75 750w, https://d39jeaq38kq5vc.cloudfront.net/_image?sanity=15w996j8%2Fcms%2Fdecc054b6a7e2b60e6af495d14b5a2f387fb0990-690x564.jpg&amp;w=828&amp;q=75 828w, https://d39jeaq38kq5vc.cloudfront.net/_image?sanity=15w996j8%2Fcms%2Fdecc054b6a7e2b60e6af495d14b5a2f387fb0990-690x564.jpg&amp;w=1080&amp;q=75 1080w, https://d39jeaq38kq5vc.cloudfront.net/_image?sanity=15w996j8%2Fcms%2Fdecc054b6a7e2b60e6af495d14b5a2f387fb0990-690x564.jpg&amp;w=1200&amp;q=75 1200w, https://d39jeaq38kq5vc.cloudfront.net/_image?sanity=15w996j8%2Fcms%2Fdecc054b6a7e2b60e6af495d14b5a2f387fb0990-690x564.jpg&amp;w=1920&amp;q=75 1920w, https://d39jeaq38kq5vc.cloudfront.net/_image?sanity=15w996j8%2Fcms%2Fdecc054b6a7e2b60e6af495d14b5a2f387fb0990-690x564.jpg&amp;w=2048&amp;q=75 2048w, https://d39jeaq38kq5vc.cloudfront.net/_image?sanity=15w996j8%2Fcms%2Fdecc054b6a7e2b60e6af495d14b5a2f387fb0990-690x564.jpg&amp;w=3840&amp;q=75 3840w" src="https://d39jeaq38kq5vc.cloudfront.net/_image?sanity=15w996j8%2Fcms%2Fdecc054b6a7e2b60e6af495d14b5a2f387fb0990-690x564.jpg&amp;w=3840&amp;q=75" decoding="async" data-nimg="fill" class="object-cover" loading="lazy" style="position: absolute; height: 100%; width: 100%; inset: 0px; color: transparent;"><span class="z-10 flex-1 text-2xl font-bold text-white sm:text-3xl" style="text-shadow: rgb(0, 0, 0) 2px 2px 2px;">SALLE DE BAIN</span>
+								</div>
+								<div class="text-xl text-green-500">à partir de 100€</div>
+							</a>
+							<a class="TilesBlock_tileStyle__HFft_ block w-full overflow-hidden text-center" href="/poster.php?categorie=2&amp;sousCategorie=1">
+								<div class="relative flex h-60 items-center"><img alt="" sizes="(min-width: 1024px) 33.3vw, (min-width: 640px) 50vw, 100vw" srcset="https://d39jeaq38kq5vc.cloudfront.net/_image?sanity=15w996j8%2Fcms%2F62f95985e45f99fe8fa8e4d85b48b3acb8144ddb-5152x3438.jpg&amp;w=384&amp;q=75 384w, https://d39jeaq38kq5vc.cloudfront.net/_image?sanity=15w996j8%2Fcms%2F62f95985e45f99fe8fa8e4d85b48b3acb8144ddb-5152x3438.jpg&amp;w=640&amp;q=75 640w, https://d39jeaq38kq5vc.cloudfront.net/_image?sanity=15w996j8%2Fcms%2F62f95985e45f99fe8fa8e4d85b48b3acb8144ddb-5152x3438.jpg&amp;w=750&amp;q=75 750w, https://d39jeaq38kq5vc.cloudfront.net/_image?sanity=15w996j8%2Fcms%2F62f95985e45f99fe8fa8e4d85b48b3acb8144ddb-5152x3438.jpg&amp;w=828&amp;q=75 828w, https://d39jeaq38kq5vc.cloudfront.net/_image?sanity=15w996j8%2Fcms%2F62f95985e45f99fe8fa8e4d85b48b3acb8144ddb-5152x3438.jpg&amp;w=1080&amp;q=75 1080w, https://d39jeaq38kq5vc.cloudfront.net/_image?sanity=15w996j8%2Fcms%2F62f95985e45f99fe8fa8e4d85b48b3acb8144ddb-5152x3438.jpg&amp;w=1200&amp;q=75 1200w, https://d39jeaq38kq5vc.cloudfront.net/_image?sanity=15w996j8%2Fcms%2F62f95985e45f99fe8fa8e4d85b48b3acb8144ddb-5152x3438.jpg&amp;w=1920&amp;q=75 1920w, https://d39jeaq38kq5vc.cloudfront.net/_image?sanity=15w996j8%2Fcms%2F62f95985e45f99fe8fa8e4d85b48b3acb8144ddb-5152x3438.jpg&amp;w=2048&amp;q=75 2048w, https://d39jeaq38kq5vc.cloudfront.net/_image?sanity=15w996j8%2Fcms%2F62f95985e45f99fe8fa8e4d85b48b3acb8144ddb-5152x3438.jpg&amp;w=3840&amp;q=75 3840w" src="https://d39jeaq38kq5vc.cloudfront.net/_image?sanity=15w996j8%2Fcms%2F62f95985e45f99fe8fa8e4d85b48b3acb8144ddb-5152x3438.jpg&amp;w=3840&amp;q=75" decoding="async" data-nimg="fill" class="object-cover" loading="lazy" style="position: absolute; height: 100%; width: 100%; inset: 0px; color: transparent;"><span class="z-10 flex-1 text-2xl font-bold text-white sm:text-3xl" style="text-shadow: rgb(0, 0, 0) 2px 2px 2px;">MONTAGE DE MEUBLE</span>
+								</div>
+								<div class="text-xl text-green-500">A partir de 29€</div>
+							</a>
+							<a class="TilesBlock_tileStyle__HFft_ block w-full overflow-hidden text-center" href="/devis-demenagement~3.pre">
+								<div class="relative flex h-60 items-center"><img alt="" sizes="(min-width: 1024px) 33.3vw, (min-width: 640px) 50vw, 100vw" srcset="https://d39jeaq38kq5vc.cloudfront.net/_image?sanity=15w996j8%2Fcms%2F5422e07afb811021693268cb63b8432fc8829fdd-6048x4032.jpg&amp;w=384&amp;q=75 384w, https://d39jeaq38kq5vc.cloudfront.net/_image?sanity=15w996j8%2Fcms%2F5422e07afb811021693268cb63b8432fc8829fdd-6048x4032.jpg&amp;w=640&amp;q=75 640w, https://d39jeaq38kq5vc.cloudfront.net/_image?sanity=15w996j8%2Fcms%2F5422e07afb811021693268cb63b8432fc8829fdd-6048x4032.jpg&amp;w=750&amp;q=75 750w, https://d39jeaq38kq5vc.cloudfront.net/_image?sanity=15w996j8%2Fcms%2F5422e07afb811021693268cb63b8432fc8829fdd-6048x4032.jpg&amp;w=828&amp;q=75 828w, https://d39jeaq38kq5vc.cloudfront.net/_image?sanity=15w996j8%2Fcms%2F5422e07afb811021693268cb63b8432fc8829fdd-6048x4032.jpg&amp;w=1080&amp;q=75 1080w, https://d39jeaq38kq5vc.cloudfront.net/_image?sanity=15w996j8%2Fcms%2F5422e07afb811021693268cb63b8432fc8829fdd-6048x4032.jpg&amp;w=1200&amp;q=75 1200w, https://d39jeaq38kq5vc.cloudfront.net/_image?sanity=15w996j8%2Fcms%2F5422e07afb811021693268cb63b8432fc8829fdd-6048x4032.jpg&amp;w=1920&amp;q=75 1920w, https://d39jeaq38kq5vc.cloudfront.net/_image?sanity=15w996j8%2Fcms%2F5422e07afb811021693268cb63b8432fc8829fdd-6048x4032.jpg&amp;w=2048&amp;q=75 2048w, https://d39jeaq38kq5vc.cloudfront.net/_image?sanity=15w996j8%2Fcms%2F5422e07afb811021693268cb63b8432fc8829fdd-6048x4032.jpg&amp;w=3840&amp;q=75 3840w" src="https://d39jeaq38kq5vc.cloudfront.net/_image?sanity=15w996j8%2Fcms%2F5422e07afb811021693268cb63b8432fc8829fdd-6048x4032.jpg&amp;w=3840&amp;q=75" decoding="async" data-nimg="fill" class="object-cover" loading="lazy" style="position: absolute; height: 100%; width: 100%; inset: 0px; color: transparent;"><span class="z-10 flex-1 text-2xl font-bold text-white sm:text-3xl" style="text-shadow: rgb(0, 0, 0) 2px 2px 2px;">DÉMÉNAGEMENT</span>
+								</div>
+								<div class="text-xl text-green-500">à partir de 39€</div>
+							</a>
+							<a class="TilesBlock_tileStyle__HFft_ block w-full overflow-hidden text-center" href="/jardinier~13.pre">
+								<div class="relative flex h-60 items-center"><img alt="" sizes="(min-width: 1024px) 33.3vw, (min-width: 640px) 50vw, 100vw" srcset="https://d39jeaq38kq5vc.cloudfront.net/_image?sanity=15w996j8%2Fcms%2F5b99f6ef9f0fb62721f3a3680bc291d70f355dfb-1024x704.jpg&amp;w=384&amp;q=75 384w, https://d39jeaq38kq5vc.cloudfront.net/_image?sanity=15w996j8%2Fcms%2F5b99f6ef9f0fb62721f3a3680bc291d70f355dfb-1024x704.jpg&amp;w=640&amp;q=75 640w, https://d39jeaq38kq5vc.cloudfront.net/_image?sanity=15w996j8%2Fcms%2F5b99f6ef9f0fb62721f3a3680bc291d70f355dfb-1024x704.jpg&amp;w=750&amp;q=75 750w, https://d39jeaq38kq5vc.cloudfront.net/_image?sanity=15w996j8%2Fcms%2F5b99f6ef9f0fb62721f3a3680bc291d70f355dfb-1024x704.jpg&amp;w=828&amp;q=75 828w, https://d39jeaq38kq5vc.cloudfront.net/_image?sanity=15w996j8%2Fcms%2F5b99f6ef9f0fb62721f3a3680bc291d70f355dfb-1024x704.jpg&amp;w=1080&amp;q=75 1080w, https://d39jeaq38kq5vc.cloudfront.net/_image?sanity=15w996j8%2Fcms%2F5b99f6ef9f0fb62721f3a3680bc291d70f355dfb-1024x704.jpg&amp;w=1200&amp;q=75 1200w, https://d39jeaq38kq5vc.cloudfront.net/_image?sanity=15w996j8%2Fcms%2F5b99f6ef9f0fb62721f3a3680bc291d70f355dfb-1024x704.jpg&amp;w=1920&amp;q=75 1920w, https://d39jeaq38kq5vc.cloudfront.net/_image?sanity=15w996j8%2Fcms%2F5b99f6ef9f0fb62721f3a3680bc291d70f355dfb-1024x704.jpg&amp;w=2048&amp;q=75 2048w, https://d39jeaq38kq5vc.cloudfront.net/_image?sanity=15w996j8%2Fcms%2F5b99f6ef9f0fb62721f3a3680bc291d70f355dfb-1024x704.jpg&amp;w=3840&amp;q=75 3840w" src="https://d39jeaq38kq5vc.cloudfront.net/_image?sanity=15w996j8%2Fcms%2F5b99f6ef9f0fb62721f3a3680bc291d70f355dfb-1024x704.jpg&amp;w=3840&amp;q=75" decoding="async" data-nimg="fill" class="object-cover" loading="lazy" style="position: absolute; height: 100%; width: 100%; inset: 0px; color: transparent;"><span class="z-10 flex-1 text-2xl font-bold text-white sm:text-3xl" style="text-shadow: rgb(0, 0, 0) 2px 2px 2px;">JARDINAGE</span>
+								</div>
+								<div class="text-xl text-green-500">A partir de 25€</div>
+							</a>
+						</div>
+					</div>
+
+				</section>
+			</div>
+
+			{#  Conainer2 des prestataires de service #}
+			<body>
+				<div id="app">
+					<div class="aie">
+						<div class="gs tv ard asa cer dcv">
+							<ul role="list" class="lw yd aab aar caj cbo cyh dko">
+								<li class="ab">
+									<div class="bpv h j lp ti adb ado aie bgt bgx bhb bhc"><img src="https://images.unsplash.com/photo-1582053433976-25c00369fc93?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&amp;ixlib=rb-1.2.1&amp;auto=format&amp;fit=crop&amp;w=512&amp;q=80" alt="" class="u apz brs"><button type="button" class="aa af bmt">
+											<span class="t">View details for IMG_4985.HEIC</span>
+										</button>
+									</div>
+									<p class="u kw lp adg avv avz axq">IMG_4985.HEIC</p>
+									<p class="u lp avv avz axm">3.9 MB</p>
+								</li>
+								<li class="ab">
+									<div class="bpv h j lp ti adb ado aie bgt bgx bhb bhc"><img src="https://images.unsplash.com/photo-1614926857083-7be149266cda?ixlib=rb-1.2.1&amp;ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&amp;auto=format&amp;fit=crop&amp;w=512&amp;q=80" alt="" class="u apz brs"><button type="button" class="aa af bmt">
+											<span class="t">View details for IMG_5214.HEIC</span>
+										</button>
+									</div>
+									<p class="u kw lp adg avv avz axq">IMG_5214.HEIC</p>
+									<p class="u lp avv avz axm">4 MB</p>
+								</li>
+								<li class="ab">
+									<div class="bpv h j lp ti adb ado aie bgt bgx bhb bhc"><img src="https://images.unsplash.com/photo-1614705827065-62c3dc488f40?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&amp;ixlib=rb-1.2.1&amp;auto=format&amp;fit=crop&amp;w=512&amp;q=80" alt="" class="u apz brs"><button type="button" class="aa af bmt">
+											<span class="t">View details for IMG_3851.HEIC</span>
+										</button>
+									</div>
+									<p class="u kw lp adg avv avz axq">IMG_3851.HEIC</p>
+									<p class="u lp avv avz axm">3.8 MB</p>
+								</li>
+								<li class="ab">
+									<div class="bpv h j lp ti adb ado aie bgt bgx bhb bhc"><img src="https://images.unsplash.com/photo-1441974231531-c6227db76b6e?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&amp;ixlib=rb-1.2.1&amp;auto=format&amp;fit=crop&amp;w=512&amp;q=80" alt="" class="u apz brs"><button type="button" class="aa af bmt">
+											<span class="t">View details for IMG_4278.HEIC</span>
+										</button>
+									</div>
+									<p class="u kw lp adg avv avz axq">IMG_4278.HEIC</p>
+									<p class="u lp avv avz axm">4.1 MB</p>
+								</li>
+								<li class="ab">
+									<div class="bpv h j lp ti adb ado aie bgt bgx bhb bhc"><img src="https://images.unsplash.com/photo-1586348943529-beaae6c28db9?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&amp;ixlib=rb-1.2.1&amp;auto=format&amp;fit=crop&amp;w=512&amp;q=80" alt="" class="u apz brs"><button type="button" class="aa af bmt">
+											<span class="t">View details for IMG_6842.HEIC</span>
+										</button>
+									</div>
+									<p class="u kw lp adg avv avz axq">IMG_6842.HEIC</p>
+									<p class="u lp avv avz axm">4 MB</p>
+								</li>
+								<li class="ab">
+									<div class="bpv h j lp ti adb ado aie bgt bgx bhb bhc"><img src="https://images.unsplash.com/photo-1497436072909-60f360e1d4b1?ixlib=rb-1.2.1&amp;ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&amp;auto=format&amp;fit=crop&amp;w=512&amp;q=80" alt="" class="u apz brs"><button type="button" class="aa af bmt">
+											<span class="t">View details for IMG_3284.HEIC</span>
+										</button>
+									</div>
+									<p class="u kw lp adg avv avz axq">IMG_3284.HEIC</p>
+									<p class="u lp avv avz axm">3.9 MB</p>
+								</li>
+								<li class="ab">
+									<div class="bpv h j lp ti adb ado aie bgt bgx bhb bhc"><img src="https://images.unsplash.com/photo-1547036967-23d11aacaee0?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&amp;ixlib=rb-1.2.1&amp;auto=format&amp;fit=crop&amp;w=512&amp;q=80" alt="" class="u apz brs"><button type="button" class="aa af bmt">
+											<span class="t">View details for IMG_4841.HEIC</span>
+										</button>
+									</div>
+									<p class="u kw lp adg avv avz axq">IMG_4841.HEIC</p>
+									<p class="u lp avv avz axm">3.8 MB</p>
+								</li>
+								<li class="ab">
+									<div class="bpv h j lp ti adb ado aie bgt bgx bhb bhc"><img src="https://images.unsplash.com/photo-1492724724894-7464c27d0ceb?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&amp;ixlib=rb-1.2.1&amp;auto=format&amp;fit=crop&amp;w=512&amp;q=80" alt="" class="u apz brs"><button type="button" class="aa af bmt">
+											<span class="t">View details for IMG_5644.HEIC</span>
+										</button>
+									</div>
+									<p class="u kw lp adg avv avz axq">IMG_5644.HEIC</p>
+									<p class="u lp avv avz axm">4 MB</p>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</body>
+
+		</div>
+	</div>
+</main>{% endblock  %}
